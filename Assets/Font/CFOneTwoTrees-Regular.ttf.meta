@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0185ec797aae4c64488e705b91ee79b8
+timeCreated: 1560948280
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: CF One Two Trees
+  fontNames:
+  - CF One Two Trees
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
