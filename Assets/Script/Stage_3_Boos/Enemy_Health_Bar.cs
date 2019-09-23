@@ -28,6 +28,7 @@ public class Enemy_Health_Bar : MonoBehaviour {
 
         if (healthbar.fillAmount <= 0)
         {
+            Textbar.text = 0 + " / " + health_total;
             Success.SetActive(true);
             Time.timeScale = 0;
         }

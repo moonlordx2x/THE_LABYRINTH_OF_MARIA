@@ -102,6 +102,8 @@ public class SceneController : MonoBehaviour
         PlayerPrefs.SetInt("hidden_object_star_4", 3);
         PlayerPrefs.SetInt("hidden_object_star_5", 3);
 
+
+        PlayerPrefs.SetString("Survival_1", "Completed");
         PlayerPrefs.SetString("Survival_2", "Completed");
         PlayerPrefs.SetString("Survival_3", "Completed");
         PlayerPrefs.SetString("Survival_4", "Completed");

@@ -10,12 +10,15 @@ public class Health_Bar : MonoBehaviour {
 
     public GameObject Gameover;
 
-    float health_total = 100f;
-    public static float health_point = 100f;
-    public static int Text_point = 100;
+    float health_total;
+    public static float health_point;
+    public static int Text_point;
     // Use this for initialization
     void Start () {
         Gameover.SetActive(false);
+        health_point = 100f;
+        Text_point = 100;
+        health_total = 100f;
     }
 	
 	// Update is called once per frame
@@ -25,9 +28,11 @@ public class Health_Bar : MonoBehaviour {
 
         if(healthbar.fillAmount <= 0)
         {
+            health_point = 100f;
             Textbar.text = 0 + " / " + health_total;
             Gameover.SetActive(true);
             Time.timeScale = 0;
+            
         }
 
     }

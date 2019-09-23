@@ -6,15 +6,16 @@ public class Enemy_Animation_Trigger : MonoBehaviour {
 
     public Animator enemyanimation;
     float attack_seconds;
+
     bool attack_checker;
     void Start () {
         if (Enemy_Health_Bar.Text_point <= 100)
         {
-            attack_seconds = 0.7f;
+            attack_seconds = 2.5f;
         }
         else
         {
-            attack_seconds = 1.0f;
+            attack_seconds = 1.7f;
         }
         attack_checker = false;
     }
@@ -46,6 +47,11 @@ public class Enemy_Animation_Trigger : MonoBehaviour {
             
         }
 
+
+        //Debug.Log("Attack Seconds "+attack_seconds);
+        //Debug.Log("Game Start "+Enemy_Movement.Game_Start);
+        //Debug.Log("Attack Checker "+attack_checker);
+
         if (attack_checker == true) {
             attack_seconds -= Time.deltaTime;
             Enemy_Movement.Game_Start = false;
@@ -54,11 +60,11 @@ public class Enemy_Animation_Trigger : MonoBehaviour {
                 attack_checker = false;
                 if (Enemy_Health_Bar.Text_point <= 100)
                 {
-                    attack_seconds = 0.7f;
+                    attack_seconds = 2.5f;
                 }
                 else
                 {
-                    attack_seconds = 1.0f;
+                    attack_seconds = 1.7f;
                 }
                 
                 Enemy_Movement.Game_Start = true;
@@ -66,7 +72,7 @@ public class Enemy_Animation_Trigger : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player_Tag")
         {
