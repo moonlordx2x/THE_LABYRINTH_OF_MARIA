@@ -82,8 +82,8 @@ public class SceneController : MonoBehaviour
 
         if (PlayerPrefs.GetString("Game_Coins") == "")
         {
-            PlayerPrefs.SetInt("Coin", 500);
-            PlayerPrefs.SetInt("Gem", 500);
+            PlayerPrefs.SetInt("Coin", 50);
+            PlayerPrefs.SetInt("Gem", 50);
             PlayerPrefs.SetString("Game_Coins", "Game_Active");
         }
         else
@@ -107,5 +107,6 @@ public class SceneController : MonoBehaviour
         PlayerPrefs.SetString("Survival_2", "Completed");
         PlayerPrefs.SetString("Survival_3", "Completed");
         PlayerPrefs.SetString("Survival_4", "Completed");
+
     }
 }

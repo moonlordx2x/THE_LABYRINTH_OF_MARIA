@@ -294,6 +294,7 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Script\Animations\Info_Button.cs" />
     <Compile Include="Assets\Script\Animations\Start_Game.cs" />
     <Compile Include="Assets\Script\Animations\Ui_Controller.cs" />
     <Compile Include="Assets\Script\Camera\Camera_raio.cs" />
